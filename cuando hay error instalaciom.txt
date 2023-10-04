@@ -1,0 +1,9 @@
+cuando hay error instalaciom
+---------------------------------------
+ERROR: failed to lock directory
+
+
+options("install.lock"=FALSE)
+
+install.packages("Rcpp", dependencies = TRUE, INSTALL_opts = '--no-lock')
+install.packages("devtools", dependencies = TRUE, INSTALL_opts = '--no-lock')
